@@ -1,4 +1,115 @@
-#survey-form {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.bg-container {
+  background-color: rgba(186, 207, 225, 0.865);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.survey {
+  background-color: #1b1b32;
+  opacity: 80%;
+  width: 50%;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    font-size: 18px;
+}
+
+#description {
+  margin-top: -20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#submit {
+  background-color: rgb(44, 192, 44);
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  box-shadow: 0 0 0 4px black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: hsl(217, 10%, 16%);
+  padding: 5px;
+}
+
+#radio-label,#checkbox {
+  display: flex;
+}
+
+.checkbox-style,
+.radio-style {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  margin-top: -30px;
+}
+.checkbox-div,
+.radio-title {
+  margin-bottom: 25px;
+}
+
+input,
+#dropdown {
+  border-radius: 5px;
+  height: 30px;
+}
+
+#textarea {
+  border-radius: 5px;
+  min-height: 120px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+#submit {
+  margin-top: 20px;
 }
